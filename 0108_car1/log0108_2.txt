@@ -1,0 +1,676 @@
+nohup: ignoring input
+[07:46:56][INFO ][src/gps.c:16] GPS: Mock Mode Initialized.
+--- Integrated V2X System (vT11) Start ---
+[07:46:56][INFO ][src/wl.c:57] Thread 1: Wireless RX Module started.
+[07:46:56][INFO ][src/pkt.c:237]   - PKT-RX Sub-thread started.
+[07:46:56][INFO ][src/val.c:61] Thread 4: VAL Controller started.
+[07:46:56][INFO ][src/sec.c:62] Thread 2: Security RX Module started.
+[07:46:56][INFO ][src/pkt.c:37]   - PKT-TX Sub-thread started (Dual-Path Aggregation).
+[07:46:56][INFO ][src/sec.c:41] Thread 7: Security TX Module started.
+[07:46:56][INFO ][src/wl.c:84] Thread 8: Wireless TX Module started.
+[07:46:56][INFO ][src/yocto_if.c:100] Thread 9: Yocto Interface Module started (UART3 Mode).
+[MAIN] 차1: Final Test Thread(사고/방향회전)가 시작되었습니다.
+[07:46:56][INFO ][src/gps.c:38] Thread 7: GPS Client Module started.
+[07:46:56][INFO ][src/yocto_if.c:101] [T9] UART3 모듈 시작 (WL2/3: 50ms, WL4: 30s 주기)
+[07:46:56][INFO ][src/gps.c:38] Thread 7: GPS Client Module started.
+
+[GPS-차1] ★ 사고 지점 도착! (Lat: 37.569000)
+
+[GPS-차1] ★ 사고 지점 도착! 주행을 멈추고 사고 모드로 전환합니다.
+
+[GPS-차1] ★ 사고 지점 도착! (Lat: 37.569000)
+
+[1;32m[T1-RX] Packet Received![0m
+pushing to q_rx_sec_rx.
+
+
+[1;32m[T1-RX] Packet Received![0m
+pushing to q_rx_sec_rx.
+
+[07:58:44][INFO ][src/pkt.c:252] PKT-RX: Incoming Packet (Sender: 0x2222, Accident: 0x9999999999999999)
+[DEBUG-PKT] Packet pushed to q_pkt_val
+[DEBUG-VAL] >>> VAL Controller Got Data! From: 0x2222
+[CHECK-VAL] 수신: From 0x2222, 거리:0.00m, 고도차:0.0m, 방향차:0도
+[1;32m[VAL-WARN] 동일 방향 사고! LCD 출력 시도[0m
+[RELAY-ACT] 사고 0x9999999999999999 패킷 중계 큐 삽입
+[07:58:44][INFO ][src/val.c:182] VAL: Reporting Nearest -> ID: 0x9999999999999999, Dist: 0.0m
+
+[1;32m[T1-RX] Packet Received![0m
+pushing to q_rx_sec_rx.
+
+yocto로부터 uart3으로 메세지 받음 7FA67CE7C8, 8, 153 
+DEBUG-- 99 99
+
+[1;32m[T1-RX] Packet Received![0m
+pushing to q_rx_sec_rx.
+
+[07:58:45][INFO ][src/pkt.c:252] PKT-RX: Incoming Packet (Sender: 0x2222, Accident: 0x0)
+[DEBUG-PKT] Packet pushed to q_pkt_val
+[DEBUG-VAL] >>> VAL Controller Got Data! From: 0x2222
+[CHECK-VAL] 수신: From 0x2222, 거리:0.00m, 고도차:0.0m, 방향차:0도
+[1;32m[VAL-WARN] 동일 방향 사고! LCD 출력 시도[0m
+[RELAY-ACT] 사고 0x0 패킷 중계 큐 삽입
+[07:58:45][INFO ][src/val.c:182] VAL: Reporting Nearest -> ID: 0x9999999999999999, Dist: 0.0m
+
+[1;32m[T1-RX] Packet Received![0m
+pushing to q_rx_sec_rx.
+
+
+[1;32m[T1-RX] Packet Received![0m
+pushing to q_rx_sec_rx.
+
+[07:58:46][INFO ][src/pkt.c:252] PKT-RX: Incoming Packet (Sender: 0x2222, Accident: 0x9999999999999999)
+[DEBUG-PKT] Packet pushed to q_pkt_val
+[DEBUG-VAL] >>> VAL Controller Got Data! From: 0x2222
+[CHECK-VAL] 수신: From 0x2222, 거리:0.00m, 고도차:0.0m, 방향차:30도
+[1;32m[VAL-WARN] 동일 방향 사고! LCD 출력 시도[0m
+[RELAY-ACT] 사고 0x9999999999999999 패킷 중계 큐 삽입
+[07:58:46][INFO ][src/val.c:182] VAL: Reporting Nearest -> ID: 0x9999999999999999, Dist: 0.0m
+
+[1;32m[T1-RX] Packet Received![0m
+pushing to q_rx_sec_rx.
+
+yocto로부터 uart3으로 메세지 받음 7FA67CE7C8, 8, 153 
+DEBUG-- 99 99
+
+[1;32m[T1-RX] Packet Received![0m
+pushing to q_rx_sec_rx.
+
+[07:58:48][INFO ][src/pkt.c:252] PKT-RX: Incoming Packet (Sender: 0x2222, Accident: 0x0)
+[DEBUG-PKT] Packet pushed to q_pkt_val
+[DEBUG-VAL] >>> VAL Controller Got Data! From: 0x2222
+[CHECK-VAL] 수신: From 0x2222, 거리:0.00m, 고도차:0.0m, 방향차:0도
+[1;32m[VAL-WARN] 동일 방향 사고! LCD 출력 시도[0m
+[RELAY-ACT] 사고 0x0 패킷 중계 큐 삽입
+[07:58:48][INFO ][src/val.c:182] VAL: Reporting Nearest -> ID: 0x9999999999999999, Dist: 0.0m
+yocto로부터 uart3으로 메세지 받음 7FA67CE7C8, 3, 4 
+DEBUG-- 4 1e
+DEBUG HERE 600
+[07:58:50][INFO ][src/yocto_if.c:147] [T9-RX] WL-4 수신: 주행 정보 업데이트 (30s 주기)
+[32m[T5-DRIVING] LAT:37.569000, HDG:30, ALT:0[0m
+yocto로부터 uart3으로 메세지 받음 7FA67CE7C8, 3, 4 
+DEBUG-- 4 1e
+DEBUG HERE 600
+[32m[T5-DRIVING] LAT:37.569000, HDG:30, ALT:0[0m
+[07:59:35][INFO ][src/yocto_if.c:147] [T9-RX] WL-4 수신: 주행 정보 업데이트 (30s 주기)
+yocto로부터 uart3으로 메세지 받음 7FA67CE7C8, 3, 4 
+DEBUG-- 4 1e
+DEBUG HERE 600
+[08:00:20][INFO ][src/yocto_if.c:147] [T9-RX] WL-4 수신: 주행 정보 업데이트 (30s 주기)
+[32m[T5-DRIVING] LAT:37.569000, HDG:30, ALT:0[0m
+yocto로부터 uart3으로 메세지 받음 7FA67CE7C8, 3, 4 
+DEBUG-- 4 1e
+DEBUG HERE 600
+[32m[T5-DRIVING] LAT:37.569000, HDG:30, ALT:0[0m
+[08:00:55][INFO ][src/yocto_if.c:147] [T9-RX] WL-4 수신: 주행 정보 업데이트 (30s 주기)
+
+[1;32m[T1-RX] Packet Received![0m
+pushing to q_rx_sec_rx.
+
+
+[1;32m[T1-RX] Packet Received![0m
+pushing to q_rx_sec_rx.
+
+[08:00:59][INFO ][src/pkt.c:252] PKT-RX: Incoming Packet (Sender: 0x2222, Accident: 0x0)
+[DEBUG-PKT] Packet pushed to q_pkt_val
+[DEBUG-VAL] >>> VAL Controller Got Data! From: 0x2222
+[CHECK-VAL] 수신: From 0x2222, 거리:0.00m, 고도차:0.0m, 방향차:0도
+[1;32m[VAL-WARN] 동일 방향 사고! LCD 출력 시도[0m
+[RELAY-ACT] 사고 0x0 패킷 중계 큐 삽입
+[08:00:59][INFO ][src/val.c:182] VAL: Reporting Nearest -> ID: 0x0, Dist: 0.0m
+yocto로부터 uart3으로 메세지 받음 7FA67CE7C8, 3, 4 
+DEBUG-- 4 1e
+DEBUG HERE 600
+[08:01:05][INFO ][src/yocto_if.c:147] [T9-RX] WL-4 수신: 주행 정보 업데이트 (30s 주기)
+[32m[T5-DRIVING] LAT:37.569000, HDG:30, ALT:0[0m
+yocto로부터 uart3으로 메세지 받음 7FA67CE7C8, 16, 3 
+DEBUG-- 3 1
+[32m[T9-RX] WL-3 수신: 내 사고 발생 -> PKT-TX로 직통 전달[0m
+[08:01:11][INFO ][src/pkt.c:75] [32m[PKT-TX] 내 사고 조립 완료 (ID: 0x0, Dir: 30, Lane: 3)[0m
+[08:01:11][INFO ][src/pkt.c:109] [PKT-TX] WL-1 전체 패킷 조립 완료 (SenderID: 0x1111, AccID: 0x0)
+[1;31m[WL-ERROR] sendto failed[0m: Success
+
+[1;32m[T8-TX] WL-1 Broadcast Success! (ID: 0x1111, ACC: 0x0)[0m
+
+[1;32m[T1-RX] Packet Received![0m
+pushing to q_rx_sec_rx.
+
+
+[1;32m[T1-RX] Packet Received![0m
+pushing to q_rx_sec_rx.
+
+[08:01:12][INFO ][src/pkt.c:252] PKT-RX: Incoming Packet (Sender: 0x2222, Accident: 0x0)
+[DEBUG-PKT] Packet pushed to q_pkt_val
+[DEBUG-VAL] >>> VAL Controller Got Data! From: 0x2222
+[CHECK-VAL] 수신: From 0x2222, 거리:0.00m, 고도차:0.0m, 방향차:0도
+[1;32m[VAL-WARN] 동일 방향 사고! LCD 출력 시도[0m
+[RELAY-ACT] 사고 0x0 패킷 중계 큐 삽입
+[08:01:12][INFO ][src/val.c:182] VAL: Reporting Nearest -> ID: 0x0, Dist: 0.0m
+yocto로부터 uart3으로 메세지 받음 7FA67CE7C8, 3, 4 
+DEBUG-- 4 1e
+DEBUG HERE 600
+[32m[T5-DRIVING] LAT:37.569000, HDG:30, ALT:0[0m
+[08:01:51][INFO ][src/yocto_if.c:147] [T9-RX] WL-4 수신: 주행 정보 업데이트 (30s 주기)
+yocto로부터 uart3으로 메세지 받음 7FA67CE7C8, 3, 4 
+DEBUG-- 4 1e
+DEBUG HERE 600
+[32m[T5-DRIVING] LAT:37.569000, HDG:30, ALT:0[0m
+[08:02:36][INFO ][src/yocto_if.c:147] [T9-RX] WL-4 수신: 주행 정보 업데이트 (30s 주기)
+yocto로부터 uart3으로 메세지 받음 7FA67CE7C8, 3, 4 
+DEBUG-- 4 1e
+DEBUG HERE 600
+[32m[T5-DRIVING] LAT:37.569000, HDG:30, ALT:0[0m
+[08:04:51][INFO ][src/yocto_if.c:147] [T9-RX] WL-4 수신: 주행 정보 업데이트 (30s 주기)
+yocto로부터 uart3으로 메세지 받음 7FA67CE7C8, 3, 4 
+DEBUG-- 4 1e
+DEBUG HERE 600
+[32m[T5-DRIVING] LAT:37.569000, HDG:30, ALT:0[0m
+[08:05:37][INFO ][src/yocto_if.c:147] [T9-RX] WL-4 수신: 주행 정보 업데이트 (30s 주기)
+yocto로부터 uart3으로 메세지 받음 7FA67CE7C8, 3, 4 
+DEBUG-- 4 1e
+DEBUG HERE 600
+[32m[T5-DRIVING] LAT:37.569000, HDG:30, ALT:0[0m
+[08:06:22][INFO ][src/yocto_if.c:147] [T9-RX] WL-4 수신: 주행 정보 업데이트 (30s 주기)
+yocto로부터 uart3으로 메세지 받음 7FA67CE7C8, 3, 4 
+DEBUG-- 4 1e
+DEBUG HERE 600
+[08:06:57][INFO ][src/yocto_if.c:147] [T9-RX] WL-4 수신: 주행 정보 업데이트 (30s 주기)
+[32m[T5-DRIVING] LAT:37.569000, HDG:30, ALT:0[0m
+yocto로부터 uart3으로 메세지 받음 7FA67CE7C8, 3, 4 
+DEBUG-- 4 1e
+DEBUG HERE 600
+[32m[T5-DRIVING] LAT:37.569000, HDG:30, ALT:0[0m
+[08:07:32][INFO ][src/yocto_if.c:147] [T9-RX] WL-4 수신: 주행 정보 업데이트 (30s 주기)
+yocto로부터 uart3으로 메세지 받음 7FA67CE7C8, 3, 4 
+DEBUG-- 4 1e
+DEBUG HERE 600
+[32m[T5-DRIVING] LAT:37.569000, HDG:30, ALT:0[0m
+[08:08:52][INFO ][src/yocto_if.c:147] [T9-RX] WL-4 수신: 주행 정보 업데이트 (30s 주기)
+yocto로부터 uart3으로 메세지 받음 7FA67CE7C8, 3, 4 
+DEBUG-- 4 1e
+DEBUG HERE 600
+[32m[T5-DRIVING] LAT:37.569000, HDG:30, ALT:0[0m
+[08:09:28][INFO ][src/yocto_if.c:147] [T9-RX] WL-4 수신: 주행 정보 업데이트 (30s 주기)
+yocto로부터 uart3으로 메세지 받음 7FA67CE7C8, 16, 3 
+DEBUG-- 3 1
+[32m[T9-RX] WL-3 수신: 내 사고 발생 -> PKT-TX로 직통 전달[0m
+[08:09:31][INFO ][src/pkt.c:75] [32m[PKT-TX] 내 사고 조립 완료 (ID: 0x0, Dir: 30, Lane: 3)[0m
+[08:09:31][INFO ][src/pkt.c:109] [PKT-TX] WL-1 전체 패킷 조립 완료 (SenderID: 0x1111, AccID: 0x0)
+[1;31m[WL-ERROR] sendto failed[0m: Invalid argument
+
+[1;32m[T1-RX] Packet Received![0m
+pushing to q_rx_sec_rx.
+
+
+[1;32m[T8-TX] WL-1 Broadcast Success! (ID: 0x1111, ACC: 0x0)[0m
+yocto로부터 uart3으로 메세지 받음 7FA67CE7C8, 8, 153 
+DEBUG-- 99 99
+
+[1;32m[T1-RX] Packet Received![0m
+pushing to q_rx_sec_rx.
+
+yocto로부터 uart3으로 메세지 받음 7FA67CE7C8, 3, 4 
+DEBUG-- 4 1e
+DEBUG HERE 600
+[08:10:13][INFO ][src/yocto_if.c:147] [T9-RX] WL-4 수신: 주행 정보 업데이트 (30s 주기)
+[32m[T5-DRIVING] LAT:37.569000, HDG:30, ALT:0[0m
+yocto로부터 uart3으로 메세지 받음 7FA67CE7C8, 3, 4 
+DEBUG-- 4 1e
+DEBUG HERE 600
+[32m[T5-DRIVING] LAT:37.569000, HDG:30, ALT:0[0m
+[08:10:58][INFO ][src/yocto_if.c:147] [T9-RX] WL-4 수신: 주행 정보 업데이트 (30s 주기)
+yocto로부터 uart3으로 메세지 받음 7FA67CE7C8, 3, 4 
+DEBUG-- 4 1e
+DEBUG HERE 600
+[32m[T5-DRIVING] LAT:37.569000, HDG:30, ALT:0[0m
+[08:11:33][INFO ][src/yocto_if.c:147] [T9-RX] WL-4 수신: 주행 정보 업데이트 (30s 주기)
+yocto로부터 uart3으로 메세지 받음 7FA67CE7C8, 3, 4 
+DEBUG-- 4 1e
+DEBUG HERE 600
+[32m[T5-DRIVING] LAT:37.569000, HDG:30, ALT:0[0m
+[08:22:30][INFO ][src/yocto_if.c:147] [T9-RX] WL-4 수신: 주행 정보 업데이트 (30s 주기)
+DG:30, ALT:0[0m
+[08:04:06][INFO ][src/yocto_if.c:147] [T9-RX] WL-4 수신: 주행 정보 업데이트 (30s 주기)
+yocto로부터 uart3으로 메세지 받음 7FB57AE7C8, 3, 4 
+DEBUG-- 4 1e
+DEBUG HERE 600
+[32m[T5-DRIVING] LAT:37.569000, HDG:30, ALT:0[0m
+[08:04:16][INFO ][src/yocto_if.c:147] [T9-RX] WL-4 수신: 주행 정보 업데이트 (30s 주기)
+yocto로부터 uart3으로 메세지 받음 7FB57AE7C8, 3, 4 
+DEBUG-- 4 1e
+DEBUG HERE 600
+[32m[T5-DRIVING] LAT:37.569000, HDG:30, ALT:0[0m
+[08:04:26][INFO ][src/yocto_if.c:147] [T9-RX] WL-4 수신: 주행 정보 업데이트 (30s 주기)
+yocto로부터 uart3으로 메세지 받음 7FB57AE7C8, 3, 4 
+DEBUG-- 4 1e
+DEBUG HERE 600
+[32m[T5-DRIVING] LAT:37.569000, HDG:30, ALT:0[0m
+[08:04:36][INFO ][src/yocto_if.c:147] [T9-RX] WL-4 수신: 주행 정보 업데이트 (30s 주기)
+yocto로부터 uart3으로 메세지 받음 7FB57AE7C8, 3, 4 
+DEBUG-- 4 1e
+DEBUG HERE 600
+[08:05:01][INFO ][src/yocto_if.c:147] [32m[T5-DRIVING] LAT:37.569000, HDG:30, ALT:0[0m
+[T9-RX] WL-4 수신: 주행 정보 업데이트 (30s 주기)
+yocto로부터 uart3으로 메세지 받음 7FB57AE7C8, 3, 4 
+DEBUG-- 4 1e
+DEBUG HERE 600
+[32m[T5-DRIVING] LAT:37.569000, HDG:30, ALT:0[0m
+[08:05:11][INFO ][src/yocto_if.c:147] [T9-RX] WL-4 수신: 주행 정보 업데이트 (30s 주기)
+yocto로부터 uart3으로 메세지 받음 7FB57AE7C8, 3, 4 
+DEBUG-- 4 1e
+DEBUG HERE 600
+[08:05:47][INFO ][src/yocto_if.c:147] [T9-RX] WL-4 수신: 주행 정보 업데이트 (30s 주기)
+[32m[T5-DRIVING] LAT:37.569000, HDG:30, ALT:0[0m
+yocto로부터 uart3으로 메세지 받음 7FB57AE7C8, 3, 4 
+DEBUG-- 4 1e
+DEBUG HERE 600
+[32m[T5-DRIVING] LAT:37.569000, HDG:30, ALT:0[0m
+[08:05:57][INFO ][src/yocto_if.c:147] [T9-RX] WL-4 수신: 주행 정보 업데이트 (30s 주기)
+yocto로부터 uart3으로 메세지 받음 7FB57AE7C8, 3, 4 
+DEBUG-- 4 1e
+DEBUG HERE 600
+[32m[T5-DRIVING] LAT:37.569000, HDG:30, ALT:0[0m
+[08:06:32][INFO ][src/yocto_if.c:147] [T9-RX] WL-4 수신: 주행 정보 업데이트 (30s 주기)
+yocto로부터 uart3으로 메세지 받음 7FB57AE7C8, 3, 4 
+DEBUG-- 4 1e
+DEBUG HERE 600
+[32m[T5-DRIVING] LAT:37.569000, HDG:30, ALT:0[0m
+[08:07:07][INFO ][src/yocto_if.c:147] [T9-RX] WL-4 수신: 주행 정보 업데이트 (30s 주기)
+yocto로부터 uart3으로 메세지 받음 7FB57AE7C8, 3, 4 
+DEBUG-- 4 1e
+DEBUG HERE 600
+[32m[T5-DRIVING] LAT:37.569000, HDG:30, ALT:0[0m
+[08:07:17][INFO ][src/yocto_if.c:147] [T9-RX] WL-4 수신: 주행 정보 업데이트 (30s 주기)
+yocto로부터 uart3으로 메세지 받음 7FB57AE7C8, 3, 4 
+DEBUG-- 4 1e
+DEBUG HERE 600
+[32m[T5-DRIVING] LAT:37.569000, HDG:30, ALT:0[0m
+[08:07:42][INFO ][src/yocto_if.c:147] [T9-RX] WL-4 수신: 주행 정보 업데이트 (30s 주기)
+yocto로부터 uart3으로 메세지 받음 7FB57AE7C8, 3, 4 
+DEBUG-- 4 1e
+DEBUG HERE 600
+[32m[T5-DRIVING] LAT:37.569000, HDG:30, ALT:0[0m
+[08:07:52][INFO ][src/yocto_if.c:147] [T9-RX] WL-4 수신: 주행 정보 업데이트 (30s 주기)
+yocto로부터 uart3으로 메세지 받음 7FB57AE7C8, 3, 4 
+DEBUG-- 4 1e
+DEBUG HERE 600
+[32m[T5-DRIVING] LAT:37.569000, HDG:30, ALT:0[0m
+[08:08:07][INFO ][src/yocto_if.c:147] [T9-RX] WL-4 수신: 주행 정보 업데이트 (30s 주기)
+yocto로부터 uart3으로 메세지 받음 7FB57AE7C8, 3, 4 
+DEBUG-- 4 1e
+DEBUG HERE 600
+[32m[T5-DRIVING] LAT:37.569000, HDG:30, ALT:0[0m
+[08:08:17][INFO ][src/yocto_if.c:147] [T9-RX] WL-4 수신: 주행 정보 업데이트 (30s 주기)
+yocto로부터 uart3으로 메세지 받음 7FB57AE7C8, 3, 4 
+DEBUG-- 4 1e
+DEBUG HERE 600
+[08:08:27][INFO ][src/yocto_if.c:147] [T9-RX] WL-4 수신: 주행 정보 업데이트 (30s 주기)
+[32m[T5-DRIVING] LAT:37.569000, HDG:30, ALT:0[0m
+yocto로부터 uart3으로 메세지 받음 7FB57AE7C8, 3, 4 
+DEBUG-- 4 1e
+DEBUG HERE 600
+[32m[T5-DRIVING] LAT:37.569000, HDG:30, ALT:0[0m
+[08:09:02][INFO ][src/yocto_if.c:147] [T9-RX] WL-4 수신: 주행 정보 업데이트 (30s 주기)
+yocto로부터 uart3으로 메세지 받음 7FB57AE7C8, 3, 4 
+DEBUG-- 4 1e
+DEBUG HERE 600
+[32m[T5-DRIVING] LAT:37.569000, HDG:30, ALT:0[0m
+[08:09:12][INFO ][src/yocto_if.c:147] [T9-RX] WL-4 수신: 주행 정보 업데이트 (30s 주기)
+
+[1;32m[T1-RX] Packet Received![0m
+pushing to q_rx_sec_rx.
+
+yocto로부터 uart3으로 메세지 받음 7FB57AE7C8, 16, 3 
+DEBUG-- 3 1
+[32m[T9-RX] WL-3 수신: 내 사고 발생 -> PKT-TX로 직통 전달[0m
+[08:09:35][INFO ][src/pkt.c:75] [32m[PKT-TX] 내 사고 조립 완료 (ID: 0x0, Dir: 30, Lane: 2)[0m
+[08:09:35][INFO ][src/pkt.c:109] [PKT-TX] WL-1 전체 패킷 조립 완료 (SenderID: 0x1111, AccID: 0x0)
+
+[1;32m[T1-RX] Packet Received![0m
+pushing to q_rx_sec_rx.
+
+[1;31m[WL-ERROR] sendto failed[0m: Invalid argument
+
+[1;32m[T8-TX] WL-1 Broadcast Success! (ID: 0x1111, ACC: 0x0)[0m
+yocto로부터 uart3으로 메세지 받음 7FB57AE7C8, 3, 4 
+DEBUG-- 4 1e
+DEBUG HERE 600
+[32m[T5-DRIVING] LAT:37.569000, HDG:30, ALT:0[0m
+[08:09:38][INFO ][src/yocto_if.c:147] [T9-RX] WL-4 수신: 주행 정보 업데이트 (30s 주기)
+yocto로부터 uart3으로 메세지 받음 7FB57AE7C8, 3, 4 
+DEBUG-- 4 1e
+DEBUG HERE 600
+[32m[T5-DRIVING] LAT:37.569000, HDG:30, ALT:0[0m
+[08:09:48][INFO ][src/yocto_if.c:147] [T9-RX] WL-4 수신: 주행 정보 업데이트 (30s 주기)
+yocto로부터 uart3으로 메세지 받음 7FB57AE7C8, 3, 4 
+DEBUG-- 4 1e
+DEBUG HERE 600
+[32m[T5-DRIVING] LAT:37.569000, HDG:30, ALT:0[0m
+[08:10:23][INFO ][src/yocto_if.c:147] [T9-RX] WL-4 수신: 주행 정보 업데이트 (30s 주기)
+yocto로부터 uart3으로 메세지 받음 7FB57AE7C8, 3, 4 
+DEBUG-- 4 1e
+DEBUG HERE 600
+[32m[T5-DRIVING] LAT:37.569000, HDG:30, ALT:0[0m
+[08:10:33][INFO ][src/yocto_if.c:147] [T9-RX] WL-4 수신: 주행 정보 업데이트 (30s 주기)
+yocto로부터 uart3으로 메세지 받음 7FB57AE7C8, 3, 4 
+DEBUG-- 4 1e
+DEBUG HERE 600
+[32m[T5-DRIVING] LAT:37.569000, HDG:30, ALT:0[0m
+[08:10:43][INFO ][src/yocto_if.c:147] [T9-RX] WL-4 수신: 주행 정보 업데이트 (30s 주기)
+yocto로부터 uart3으로 메세지 받음 7FB57AE7C8, 3, 4 
+DEBUG-- 4 1e
+DEBUG HERE 600
+[32m[T5-DRIVING] LAT:37.569000, HDG:30, ALT:0[0m
+[08:11:08][INFO ][src/yocto_if.c:147] [T9-RX] WL-4 수신: 주행 정보 업데이트 (30s 주기)
+yocto로부터 uart3으로 메세지 받음 7FB57AE7C8, 3, 4 
+DEBUG-- 4 1e
+DEBUG HERE 600
+[08:22:05][INFO ][src/yocto_if.c:147] [T9-RX] WL-4 수신: 주행 정보 업데이트 (30s 주기)
+[32m[T5-DRIVING] LAT:37.569000, HDG:30, ALT:0[0m
+yocto로부터 uart3으로 메세지 받음 7FB57AE7C8, 3, 4 
+DEBUG-- 4 1e
+DEBUG HERE 600
+[32m[T5-DRIVING] LAT:37.569000, HDG:30, ALT:0[0m
+[08:22:40][INFO ][src/yocto_if.c:147] [T9-RX] WL-4 수신: 주행 정보 업데이트 (30s 주기)
+yocto로부터 uart3으로 메세지 받음 7FB57AE7C8, 3, 4 
+DEBUG-- 4 1e
+DEBUG HERE 600
+[32m[T5-DRIVING] LAT:37.569000, HDG:30, ALT:0[0m
+[08:22:50][INFO ][src/yocto_if.c:147] [T9-RX] WL-4 수신: 주행 정보 업데이트 (30s 주기)
+NG] LAT:37.569000, HDG:30, ALT:0[0m
+[08:05:16][INFO ][src/yocto_if.c:147] [T9-RX] WL-4 수신: 주행 정보 업데이트 (30s 주기)
+yocto로부터 uart3으로 메세지 받음 7F8D7AE7C8, 3, 4 
+DEBUG-- 4 1e
+DEBUG HERE 600
+[32m[T5-DRIVING] LAT:37.569000, HDG:30, ALT:0[0m
+[08:05:21][INFO ][src/yocto_if.c:147] [T9-RX] WL-4 수신: 주행 정보 업데이트 (30s 주기)
+yocto로부터 uart3으로 메세지 받음 7F8D7AE7C8, 3, 4 
+DEBUG-- 4 1e
+DEBUG HERE 600
+[32m[T5-DRIVING] LAT:37.569000, HDG:30, ALT:0[0m
+[08:05:27][INFO ][src/yocto_if.c:147] [T9-RX] WL-4 수신: 주행 정보 업데이트 (30s 주기)
+yocto로부터 uart3으로 메세지 받음 7F8D7AE7C8, 3, 4 
+DEBUG-- 4 1e
+DEBUG HERE 600
+[32m[T5-DRIVING] LAT:37.569000, HDG:30, ALT:0[0m
+[08:05:32][INFO ][src/yocto_if.c:147] [T9-RX] WL-4 수신: 주행 정보 업데이트 (30s 주기)
+yocto로부터 uart3으로 메세지 받음 7F8D7AE7C8, 3, 4 
+DEBUG-- 4 1e
+DEBUG HERE 600
+[32m[T5-DRIVING] LAT:37.569000, HDG:30, ALT:0[0m
+[08:05:42][INFO ][src/yocto_if.c:147] [T9-RX] WL-4 수신: 주행 정보 업데이트 (30s 주기)
+yocto로부터 uart3으로 메세지 받음 7F8D7AE7C8, 3, 4 
+DEBUG-- 4 1e
+DEBUG HERE 600
+[32m[T5-DRIVING] LAT:37.569000, HDG:30, ALT:0[0m
+[08:05:52][INFO ][src/yocto_if.c:147] [T9-RX] WL-4 수신: 주행 정보 업데이트 (30s 주기)
+yocto로부터 uart3으로 메세지 받음 7F8D7AE7C8, 3, 4 
+DEBUG-- 4 1e
+DEBUG HERE 600
+[32m[T5-DRIVING] LAT:37.569000, HDG:30, ALT:0[0m
+[08:06:02][INFO ][src/yocto_if.c:147] [T9-RX] WL-4 수신: 주행 정보 업데이트 (30s 주기)
+yocto로부터 uart3으로 메세지 받음 7F8D7AE7C8, 3, 4 
+DEBUG-- 4 1e
+DEBUG HERE 600
+[32m[T5-DRIVING] LAT:37.569000, HDG:30, ALT:0[0m
+[08:06:07][INFO ][src/yocto_if.c:147] [T9-RX] WL-4 수신: 주행 정보 업데이트 (30s 주기)
+yocto로부터 uart3으로 메세지 받음 7F8D7AE7C8, 3, 4 
+DEBUG-- 4 1e
+DEBUG HERE 600
+[32m[T5-DRIVING] LAT:37.569000, HDG:30, ALT:0[0m
+[08:06:12][INFO ][src/yocto_if.c:147] [T9-RX] WL-4 수신: 주행 정보 업데이트 (30s 주기)
+yocto로부터 uart3으로 메세지 받음 7F8D7AE7C8, 3, 4 
+DEBUG-- 4 1e
+DEBUG HERE 600
+[32m[T5-DRIVING] LAT:37.569000, HDG:30, ALT:0[0m
+[08:06:17][INFO ][src/yocto_if.c:147] [T9-RX] WL-4 수신: 주행 정보 업데이트 (30s 주기)
+yocto로부터 uart3으로 메세지 받음 7F8D7AE7C8, 3, 4 
+DEBUG-- 4 1e
+DEBUG HERE 600
+[32m[T5-DRIVING] LAT:37.569000, HDG:30, ALT:0[0m
+[08:06:27][INFO ][src/yocto_if.c:147] [T9-RX] WL-4 수신: 주행 정보 업데이트 (30s 주기)
+yocto로부터 uart3으로 메세지 받음 7F8D7AE7C8, 3, 4 
+DEBUG-- 4 1e
+DEBUG HERE 600
+[32m[T5-DRIVING] LAT:37.569000, HDG:30, ALT:0[0m
+[08:06:37][INFO ][src/yocto_if.c:147] [T9-RX] WL-4 수신: 주행 정보 업데이트 (30s 주기)
+yocto로부터 uart3으로 메세지 받음 7F8D7AE7C8, 3, 4 
+DEBUG-- 4 1e
+DEBUG HERE 600
+[32m[T5-DRIVING] LAT:37.569000, HDG:30, ALT:0[0m
+[08:06:42][INFO ][src/yocto_if.c:147] [T9-RX] WL-4 수신: 주행 정보 업데이트 (30s 주기)
+yocto로부터 uart3으로 메세지 받음 7F8D7AE7C8, 3, 4 
+DEBUG-- 4 1e
+DEBUG HERE 600
+[32m[T5-DRIVING] LAT:37.569000, HDG:30, ALT:0[0m
+[08:06:47][INFO ][src/yocto_if.c:147] [T9-RX] WL-4 수신: 주행 정보 업데이트 (30s 주기)
+yocto로부터 uart3으로 메세지 받음 7F8D7AE7C8, 3, 4 
+DEBUG-- 4 1e
+DEBUG HERE 600
+[32m[T5-DRIVING] LAT:37.569000, HDG:30, ALT:0[0m
+[08:06:52][INFO ][src/yocto_if.c:147] [T9-RX] WL-4 수신: 주행 정보 업데이트 (30s 주기)
+yocto로부터 uart3으로 메세지 받음 7F8D7AE7C8, 3, 4 
+DEBUG-- 4 1e
+DEBUG HERE 600
+[32m[T5-DRIVING] LAT:37.569000, HDG:30, ALT:0[0m
+[08:07:02][INFO ][src/yocto_if.c:147] [T9-RX] WL-4 수신: 주행 정보 업데이트 (30s 주기)
+yocto로부터 uart3으로 메세지 받음 7F8D7AE7C8, 3, 4 
+DEBUG-- 4 1e
+DEBUG HERE 600
+[32m[T5-DRIVING] LAT:37.569000, HDG:30, ALT:0[0m
+[08:07:12][INFO ][src/yocto_if.c:147] [T9-RX] WL-4 수신: 주행 정보 업데이트 (30s 주기)
+yocto로부터 uart3으로 메세지 받음 7F8D7AE7C8, 3, 4 
+DEBUG-- 4 1e
+DEBUG HERE 600
+[32m[T5-DRIVING] LAT:37.569000, HDG:30, ALT:0[0m
+[08:07:22][INFO ][src/yocto_if.c:147] [T9-RX] WL-4 수신: 주행 정보 업데이트 (30s 주기)
+yocto로부터 uart3으로 메세지 받음 7F8D7AE7C8, 3, 4 
+DEBUG-- 4 1e
+DEBUG HERE 600
+[32m[T5-DRIVING] LAT:37.569000, HDG:30, ALT:0[0m
+[08:07:27][INFO ][src/yocto_if.c:147] [T9-RX] WL-4 수신: 주행 정보 업데이트 (30s 주기)
+yocto로부터 uart3으로 메세지 받음 7F8D7AE7C8, 3, 4 
+DEBUG-- 4 1e
+DEBUG HERE 600
+[32m[T5-DRIVING] LAT:37.569000, HDG:30, ALT:0[0m
+[08:07:37][INFO ][src/yocto_if.c:147] [T9-RX] WL-4 수신: 주행 정보 업데이트 (30s 주기)
+yocto로부터 uart3으로 메세지 받음 7F8D7AE7C8, 3, 4 
+DEBUG-- 4 1e
+DEBUG HERE 600
+[32m[T5-DRIVING] LAT:37.569000, HDG:30, ALT:0[0m
+[08:07:47][INFO ][src/yocto_if.c:147] [T9-RX] WL-4 수신: 주행 정보 업데이트 (30s 주기)
+yocto로부터 uart3으로 메세지 받음 7F8D7AE7C8, 3, 4 
+DEBUG-- 4 1e
+DEBUG HERE 600
+[32m[T5-DRIVING] LAT:37.569000, HDG:30, ALT:0[0m
+[08:07:57][INFO ][src/yocto_if.c:147] [T9-RX] WL-4 수신: 주행 정보 업데이트 (30s 주기)
+yocto로부터 uart3으로 메세지 받음 7F8D7AE7C8, 3, 4 
+DEBUG-- 4 1e
+DEBUG HERE 600
+[32m[T5-DRIVING] LAT:37.569000, HDG:30, ALT:0[0m
+[08:08:02][INFO ][src/yocto_if.c:147] [T9-RX] WL-4 수신: 주행 정보 업데이트 (30s 주기)
+yocto로부터 uart3으로 메세지 받음 7F8D7AE7C8, 3, 4 
+DEBUG-- 4 1e
+DEBUG HERE 600
+[32m[T5-DRIVING] LAT:37.569000, HDG:30, ALT:0[0m
+[08:08:12][INFO ][src/yocto_if.c:147] [T9-RX] WL-4 수신: 주행 정보 업데이트 (30s 주기)
+yocto로부터 uart3으로 메세지 받음 7F8D7AE7C8, 3, 4 
+DEBUG-- 4 1e
+DEBUG HERE 600
+[32m[T5-DRIVING] LAT:37.569000, HDG:30, ALT:0[0m
+[08:08:22][INFO ][src/yocto_if.c:147] [T9-RX] WL-4 수신: 주행 정보 업데이트 (30s 주기)
+yocto로부터 uart3으로 메세지 받음 7F8D7AE7C8, 3, 4 
+DEBUG-- 4 1e
+DEBUG HERE 600
+[32m[T5-DRIVING] LAT:37.569000, HDG:30, ALT:0[0m
+[08:08:32][INFO ][src/yocto_if.c:147] [T9-RX] WL-4 수신: 주행 정보 업데이트 (30s 주기)
+yocto로부터 uart3으로 메세지 받음 7F8D7AE7C8, 3, 4 
+DEBUG-- 4 1e
+DEBUG HERE 600
+[32m[T5-DRIVING] LAT:37.569000, HDG:30, ALT:0[0m
+[08:08:37][INFO ][src/yocto_if.c:147] [T9-RX] WL-4 수신: 주행 정보 업데이트 (30s 주기)
+yocto로부터 uart3으로 메세지 받음 7F8D7AE7C8, 3, 4 
+DEBUG-- 4 1e
+DEBUG HERE 600
+[32m[T5-DRIVING] LAT:37.569000, HDG:30, ALT:0[0m
+[08:08:42][INFO ][src/yocto_if.c:147] [T9-RX] WL-4 수신: 주행 정보 업데이트 (30s 주기)
+yocto로부터 uart3으로 메세지 받음 7F8D7AE7C8, 3, 4 
+DEBUG-- 4 1e
+DEBUG HERE 600
+[32m[T5-DRIVING] LAT:37.569000, HDG:30, ALT:0[0m
+[08:08:47][INFO ][src/yocto_if.c:147] [T9-RX] WL-4 수신: 주행 정보 업데이트 (30s 주기)
+yocto로부터 uart3으로 메세지 받음 7F8D7AE7C8, 3, 4 
+DEBUG-- 4 1e
+DEBUG HERE 600
+[32m[T5-DRIVING] LAT:37.569000, HDG:30, ALT:0[0m
+[08:08:57][INFO ][src/yocto_if.c:147] [T9-RX] WL-4 수신: 주행 정보 업데이트 (30s 주기)
+yocto로부터 uart3으로 메세지 받음 7F8D7AE7C8, 3, 4 
+DEBUG-- 4 1e
+DEBUG HERE 600
+[32m[T5-DRIVING] LAT:37.569000, HDG:30, ALT:0[0m
+[08:09:07][INFO ][src/yocto_if.c:147] [T9-RX] WL-4 수신: 주행 정보 업데이트 (30s 주기)
+yocto로부터 uart3으로 메세지 받음 7F8D7AE7C8, 3, 4 
+DEBUG-- 4 1e
+DEBUG HERE 600
+[32m[T5-DRIVING] LAT:37.569000, HDG:30, ALT:0[0m
+[08:09:18][INFO ][src/yocto_if.c:147] [T9-RX] WL-4 수신: 주행 정보 업데이트 (30s 주기)
+yocto로부터 uart3으로 메세지 받음 7F8D7AE7C8, 3, 4 
+DEBUG-- 4 1e
+DEBUG HERE 600
+[32m[T5-DRIVING] LAT:37.569000, HDG:30, ALT:0[0m
+[08:09:23][INFO ][src/yocto_if.c:147] [T9-RX] WL-4 수신: 주행 정보 업데이트 (30s 주기)
+
+[1;32m[T1-RX] Packet Received![0m
+pushing to q_rx_sec_rx.
+
+yocto로부터 uart3으로 메세지 받음 7F8D7AE7C8, 8, 153 
+DEBUG-- 99 99
+yocto로부터 uart3으로 메세지 받음 7F8D7AE7C8, 3, 4 
+DEBUG-- 4 1e
+DEBUG HERE 600
+[32m[T5-DRIVING] LAT:37.569000, HDG:30, ALT:0[0m
+[08:09:33][INFO ][src/yocto_if.c:147] [T9-RX] WL-4 수신: 주행 정보 업데이트 (30s 주기)
+
+[1;32m[T1-RX] Packet Received![0m
+pushing to q_rx_sec_rx.
+
+yocto로부터 uart3으로 메세지 받음 7F8D7AE7C8, 3, 4 
+DEBUG-- 4 1e
+DEBUG HERE 600
+[32m[T5-DRIVING] LAT:37.569000, HDG:30, ALT:0[0m
+[08:09:43][INFO ][src/yocto_if.c:147] [T9-RX] WL-4 수신: 주행 정보 업데이트 (30s 주기)
+yocto로부터 uart3으로 메세지 받음 7F8D7AE7C8, 3, 4 
+DEBUG-- 4 1e
+DEBUG HERE 600
+[32m[T5-DRIVING] LAT:37.569000, HDG:30, ALT:0[0m
+[08:09:53][INFO ][src/yocto_if.c:147] [T9-RX] WL-4 수신: 주행 정보 업데이트 (30s 주기)
+yocto로부터 uart3으로 메세지 받음 7F8D7AE7C8, 3, 4 
+DEBUG-- 4 1e
+DEBUG HERE 600
+[32m[T5-DRIVING] LAT:37.569000, HDG:30, ALT:0[0m
+[08:09:58][INFO ][src/yocto_if.c:147] [T9-RX] WL-4 수신: 주행 정보 업데이트 (30s 주기)
+yocto로부터 uart3으로 메세지 받음 7F8D7AE7C8, 3, 4 
+DEBUG-- 4 1e
+DEBUG HERE 600
+[32m[T5-DRIVING] LAT:37.569000, HDG:30, ALT:0[0m
+[08:10:03][INFO ][src/yocto_if.c:147] [T9-RX] WL-4 수신: 주행 정보 업데이트 (30s 주기)
+yocto로부터 uart3으로 메세지 받음 7F8D7AE7C8, 3, 4 
+DEBUG-- 4 1e
+DEBUG HERE 600
+[32m[T5-DRIVING] LAT:37.569000, HDG:30, ALT:0[0m
+[08:10:08][INFO ][src/yocto_if.c:147] [T9-RX] WL-4 수신: 주행 정보 업데이트 (30s 주기)
+yocto로부터 uart3으로 메세지 받음 7F8D7AE7C8, 3, 4 
+DEBUG-- 4 1e
+DEBUG HERE 600
+[32m[T5-DRIVING] LAT:37.569000, HDG:30, ALT:0[0m
+[08:10:18][INFO ][src/yocto_if.c:147] [T9-RX] WL-4 수신: 주행 정보 업데이트 (30s 주기)
+yocto로부터 uart3으로 메세지 받음 7F8D7AE7C8, 3, 4 
+DEBUG-- 4 1e
+DEBUG HERE 600
+[32m[T5-DRIVING] LAT:37.569000, HDG:30, ALT:0[0m
+[08:10:28][INFO ][src/yocto_if.c:147] [T9-RX] WL-4 수신: 주행 정보 업데이트 (30s 주기)
+yocto로부터 uart3으로 메세지 받음 7F8D7AE7C8, 3, 4 
+DEBUG-- 4 1e
+DEBUG HERE 600
+[32m[T5-DRIVING] LAT:37.569000, HDG:30, ALT:0[0m
+[08:10:38][INFO ][src/yocto_if.c:147] [T9-RX] WL-4 수신: 주행 정보 업데이트 (30s 주기)
+yocto로부터 uart3으로 메세지 받음 7F8D7AE7C8, 3, 4 
+DEBUG-- 4 1e
+DEBUG HERE 600
+[32m[T5-DRIVING] LAT:37.569000, HDG:30, ALT:0[0m
+[08:10:48][INFO ][src/yocto_if.c:147] [T9-RX] WL-4 수신: 주행 정보 업데이트 (30s 주기)
+yocto로부터 uart3으로 메세지 받음 7F8D7AE7C8, 3, 4 
+DEBUG-- 4 1e
+DEBUG HERE 600
+[08:10:53][INFO ][src/yocto_if.c:147] [T9-RX] WL-4 수신: 주행 정보 업데이트 (30s 주기)
+[32m[T5-DRIVING] LAT:37.569000, HDG:30, ALT:0[0m
+yocto로부터 uart3으로 메세지 받음 7F8D7AE7C8, 3, 4 
+DEBUG-- 4 1e
+DEBUG HERE 600
+[32m[T5-DRIVING] LAT:37.569000, HDG:30, ALT:0[0m
+[08:11:03][INFO ][src/yocto_if.c:147] [T9-RX] WL-4 수신: 주행 정보 업데이트 (30s 주기)
+yocto로부터 uart3으로 메세지 받음 7F8D7AE7C8, 3, 4 
+DEBUG-- 4 1e
+DEBUG HERE 600
+[32m[T5-DRIVING] LAT:37.569000, HDG:30, ALT:0[0m
+[08:11:13][INFO ][src/yocto_if.c:147] [T9-RX] WL-4 수신: 주행 정보 업데이트 (30s 주기)
+yocto로부터 uart3으로 메세지 받음 7F8D7AE7C8, 3, 4 
+DEBUG-- 4 1e
+DEBUG HERE 600
+[32m[T5-DRIVING] LAT:37.569000, HDG:30, ALT:0[0m
+[08:11:18][INFO ][src/yocto_if.c:147] [T9-RX] WL-4 수신: 주행 정보 업데이트 (30s 주기)
+yocto로부터 uart3으로 메세지 받음 7F8D7AE7C8, 3, 4 
+DEBUG-- 4 1e
+DEBUG HERE 600
+[08:11:23][INFO ][src/yocto_if.c:147] [32m[T5-DRIVING] LAT:37.569000, HDG:30, ALT:0[0m
+[T9-RX] WL-4 수신: 주행 정보 업데이트 (30s 주기)
+yocto로부터 uart3으로 메세지 받음 7F8D7AE7C8, 3, 4 
+DEBUG-- 4 1e
+DEBUG HERE 600
+[32m[T5-DRIVING] LAT:37.569000, HDG:30, ALT:0[0m
+[08:11:28][INFO ][src/yocto_if.c:147] [T9-RX] WL-4 수신: 주행 정보 업데이트 (30s 주기)
+yocto로부터 uart3으로 메세지 받음 7F8D7AE7C8, 3, 4 
+DEBUG-- 4 1e
+DEBUG HERE 600
+[08:22:00][INFO ][src/yocto_if.c:147] [T9-RX] WL-4 수신: 주행 정보 업데이트 (30s 주기)
+[32m[T5-DRIVING] LAT:37.569000, HDG:30, ALT:0[0m
+yocto로부터 uart3으로 메세지 받음 7F8D7AE7C8, 3, 4 
+DEBUG-- 4 1e
+DEBUG HERE 600
+[32m[T5-DRIVING] LAT:37.569000, HDG:30, ALT:0[0m
+[08:22:10][INFO ][src/yocto_if.c:147] [T9-RX] WL-4 수신: 주행 정보 업데이트 (30s 주기)
+yocto로부터 uart3으로 메세지 받음 7F8D7AE7C8, 3, 4 
+DEBUG-- 4 1e
+DEBUG HERE 600
+[32m[T5-DRIVING] LAT:37.569000, HDG:30, ALT:0[0m
+[08:22:15][INFO ][src/yocto_if.c:147] [T9-RX] WL-4 수신: 주행 정보 업데이트 (30s 주기)
+yocto로부터 uart3으로 메세지 받음 7F8D7AE7C8, 3, 4 
+DEBUG-- 4 1e
+DEBUG HERE 600
+[32m[T5-DRIVING] LAT:37.569000, HDG:30, ALT:0[0m
+[08:22:20][INFO ][src/yocto_if.c:147] [T9-RX] WL-4 수신: 주행 정보 업데이트 (30s 주기)
+yocto로부터 uart3으로 메세지 받음 7F8D7AE7C8, 3, 4 
+DEBUG-- 4 1e
+DEBUG HERE 600
+[08:22:25][INFO ][src/yocto_if.c:147] [T9-RX] WL-4 수신: 주행 정보 업데이트 (30s 주기)
+[32m[T5-DRIVING] LAT:37.569000, HDG:30, ALT:0[0m
+yocto로부터 uart3으로 메세지 받음 7F8D7AE7C8, 3, 4 
+DEBUG-- 4 1e
+DEBUG HERE 600
+[32m[T5-DRIVING] LAT:37.569000, HDG:30, ALT:0[0m
+[08:22:35][INFO ][src/yocto_if.c:147] [T9-RX] WL-4 수신: 주행 정보 업데이트 (30s 주기)
+yocto로부터 uart3으로 메세지 받음 7F8D7AE7C8, 3, 4 
+DEBUG-- 4 1e
+DEBUG HERE 600
+[08:22:45][INFO ][src/yocto_if.c:147] [T9-RX] WL-4 수신: 주행 정보 업데이트 (30s 주기)
+[32m[T5-DRIVING] LAT:37.569000, HDG:30, ALT:0[0m
+yocto로부터 uart3으로 메세지 받음 7F8D7AE7C8, 3, 4 
+DEBUG-- 4 1e
+DEBUG HERE 600
+[32m[T5-DRIVING] LAT:37.569000, HDG:30, ALT:0[0m
+[08:22:55][INFO ][src/yocto_if.c:147] [T9-RX] WL-4 수신: 주행 정보 업데이트 (30s 주기)
+yocto로부터 uart3으로 메세지 받음 7F8D7AE7C8, 3, 4 
+DEBUG-- 4 1e
+DEBUG HERE 600
+[32m[T5-DRIVING] LAT:37.569000, HDG:30, ALT:0[0m
+[08:23:00][INFO ][src/yocto_if.c:147] [T9-RX] WL-4 수신: 주행 정보 업데이트 (30s 주기)
